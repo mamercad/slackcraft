@@ -10,7 +10,7 @@ import time
 
 parser = argparse.ArgumentParser(description='Minecraft rcon to Slack')
 parser.add_argument('--slackhook', help='Your Slack incoming webook URL', default='https://hooks.slack.com/services/XXX/XXX/XXX')
-parser.add_argument('--mcrcon', help='Path to the mcrcon utility (GitHub-Tiiffi/mcrcon)', default='/home/minecraft/mcrcon/mcrcon')
+parser.add_argument('--mcrcon', help='Path to the mcrcon utility (GitHub-Tiiffi/mcrcon)', default='/home/minecraft/current/mcrcon/mcrcon')
 parser.add_argument('--hostname', help='Minecraft rcon hostname', default='localhost')
 parser.add_argument('--port', type=int, help='Minecraft server rcon', default=25575)
 parser.add_argument('--password', help='Minecraft rcon password', default='password')
