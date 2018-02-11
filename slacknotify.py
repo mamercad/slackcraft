@@ -30,7 +30,7 @@ while True:
     if rcon_output:
         payload = {
             "text": "[{0}]{1}".format(socket.gethostname(), rcon_output),
-            "attachements": {
+            "attachments": {
                 "text": "https://github.com/mamercad/slackcraft/"
             }
         }
