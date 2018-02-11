@@ -29,10 +29,7 @@ while True:
         sys.exit(1)
     if rcon_output:
         payload = {
-            "text": "[{0}]{1}".format(socket.gethostname(), rcon_output),
-            "attachments": [{
-                "text": "https://github.com/mamercad/slackcraft/"
-            }]
+            "text": "[{0}]{1}".format(socket.gethostname(), rcon_output)
         }
         if last_payload != payload:
             print("Sending '[{0}]{1}' to Slack".format(socket.gethostname(), rcon_output.rstrip()))
