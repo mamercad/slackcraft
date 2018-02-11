@@ -1,0 +1,16 @@
+[Unit]
+Description=Minecraft to Slack
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/minecraft/current/slackcraft
+User=minecraft
+Group=minecraft
+Type=idle
+ExecStart=/usr/bin/python ./slacknotify.py --slackhook 'https://hooks.slack.com/services/XXX/XXX/XXX'
+Restart=always
+TimeoutStartSec=10
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
